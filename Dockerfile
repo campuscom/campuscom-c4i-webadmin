@@ -10,6 +10,12 @@ ENV PATH /app/node_modules/.bin:$PATH
 # install app dependencies
 COPY package.json ./
 COPY yarn.lock ./
+
+ARG REACT_APP_API_BASE_URL
+ARG REACT_APP_CDN_URL
+ARG REACT_APP_STOREFRONT_URL
+ARG REACT_APP_TINY_MCE_API_KEY
+
 RUN yarn
 
 # add app
