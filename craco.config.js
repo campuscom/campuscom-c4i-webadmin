@@ -1,12 +1,12 @@
 /* craco.config.js */
 const path = require("path")
-const lessConfig = require("./less.config")
+//const lessConfig = require("./less.config")
 module.exports = function ({ env }) {
   return {
     babel: {
-      ...lessConfig.babel
+      //...lessConfig.babel
     },
-    plugins: [...lessConfig.plugins],
+    //plugins: [...lessConfig.plugins],
     eslint: {
       enable: false
     },
